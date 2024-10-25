@@ -1,47 +1,51 @@
 # Jobee - Online Job Portal
 
+## Table of Contents
+- [Overview](#overview)
+- [System Architecture](#system-architecture)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technology Stack](#technology-stack)
+- [Security Measures](#security-measures)
+- [Testing](#testing)
+
+---
+
 ## Overview
-Jobee is a Laravel-based job portal connecting job seekers with employers. This platform offers secure user authentication, job listings, search functionalities, and application management.
+**Jobee** هو بوابة وظائف مبنية على Laravel تربط بين الباحثين عن العمل وأصحاب العمل، حيث تقدم ميزات المصادقة الآمنة، قوائم الوظائف، وإدارة التطبيقات.
 
 ## System Architecture
-- **Client (Browser):** User access via web browser.
-- **Web Server:** Apache handles HTTP requests.
-- **Laravel Application:** Manages MVC components (models, controllers, Blade views, routes).
-- **Database:** MySQL stores job listings, user profiles, and applications.
+- **Client (Browser):** المستخدمين يصلون للمنصة عبر المتصفح.
+- **Web Server:** يتم تشغيله بواسطة Apache لمعالجة الطلبات.
+- **Laravel Application:** تتضمن النماذج، وحدات التحكم، وقوالب Blade، ومسارات Laravel.
+- **Database:** MySQL لحفظ بيانات الوظائف، والمستخدمين، والتطبيقات.
 
-## Key Modules and Components
+## Features
 
 ### 1. Authentication and User Management
-   - **Registration and Login:** Laravel’s authentication for secure access.
-   - **Role Management:** Access levels for job seekers and admins.
-   - **Profile Management:** Manage profiles, upload resumes.
-   - **Technologies:** Laravel Breeze, Policies, Gates.
+- **User Registration & Login:** تسجيل المستخدمين وتسجيل الدخول باستخدام Laravel Breeze.
+- **Role Management:** التحكم في الوصول حسب نوع المستخدم.
+- **Profile Management:** إدارة الملفات الشخصية للباحثين عن العمل.
 
-### 2. Job Listings Module
-   - **Search and Filtering:** Filter by keyword, category, location, job type.
-   - **Database Interaction:** Uses Eloquent ORM for job postings.
-   - **Technologies:** Blade templates, Eloquent ORM.
+### 2. Job Listings
+- **Search & Filter:** البحث والتصفية حسب الكلمة المفتاحية، الفئة، والموقع.
+- **Database Interaction:** يعتمد على Eloquent ORM.
 
 ### 3. Job Application Management
-   - **Application Submission:** Job seekers apply and attach resumes.
-   - **File Uploads:** Secured uploads with validation.
-   - **Technologies:** File handling, Eloquent ORM.
+- **Application Submission:** تقديم طلبات الوظائف وإرفاق السير الذاتية.
+- **File Uploads:** رفع الملفات مع التأكيد على الأمان.
 
-### 4. Dashboard
-   - **Admin Dashboard:** Manage users, job listings, site content.
-   - **Job Seeker Dashboard:** Manage profile, apply, and save jobs.
-   - **Technologies:** Responsive layouts with Blade.
+### 4. User Dashboard
+- **Admin Dashboard:** يسمح بإدارة المستخدمين، الوظائف، ومحتوى الموقع.
+- **Job Seeker Dashboard:** يسمح للباحثين بإدارة ملفهم الشخصي والتقديم للوظائف.
 
-## Technology Stack
-- **Backend:** Laravel (PHP), MySQL.
-- **Frontend:** Blade, HTML5, CSS3, Bootstrap, JavaScript.
-- **Web Server:** Apache.
+---
 
-## Security Measures
-- **Authentication & Authorization:** Role-based control with CSRF protection.
-- **SQL Injection Prevention:** Eloquent ORM and prepared statements.
-- **File Upload Security:** File validation against malicious uploads.
+## Installation
+اتبع الخطوات التالية لتثبيت المشروع محليًا:
 
-## Testing
-- **PHPUnit:** Ensures quality and reliability.
-
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/username/Jobee.git
+   cd Jobee
