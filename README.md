@@ -13,37 +13,37 @@
 ---
 
 ## Overview
-**Jobee** هو بوابة وظائف مبنية على Laravel تربط بين الباحثين عن العمل وأصحاب العمل، حيث تقدم ميزات المصادقة الآمنة، قوائم الوظائف، وإدارة التطبيقات.
+**Jobee** is an online job portal built on Laravel that connects job seekers with employers, providing secure authentication features, job listings, and application management.
 
 ## System Architecture
-- **Client (Browser):** المستخدمين يصلون للمنصة عبر المتصفح.
-- **Web Server:** يتم تشغيله بواسطة Apache لمعالجة الطلبات.
-- **Laravel Application:** تتضمن النماذج، وحدات التحكم، وقوالب Blade، ومسارات Laravel.
-- **Database:** MySQL لحفظ بيانات الوظائف، والمستخدمين، والتطبيقات.
+- **Client (Browser):** Users access the platform through a browser.
+- **Web Server:** Runs on Apache to handle requests.
+- **Laravel Application:** Includes models, controllers, Blade templates, and Laravel routes.
+- **Database:** MySQL for storing job data, user profiles, and applications.
 
 ## Features
 
 ### 1. Authentication and User Management
-- **User Registration & Login:** تسجيل المستخدمين وتسجيل الدخول باستخدام Laravel Breeze.
-- **Role Management:** التحكم في الوصول حسب نوع المستخدم.
-- **Profile Management:** إدارة الملفات الشخصية للباحثين عن العمل.
+- **User Registration & Login:** Allows users to register and log in using Laravel Breeze.
+- **Role Management:** Controls access based on user types.
+- **Profile Management:** Manages profiles for job seekers.
 
 ### 2. Job Listings
-- **Search & Filter:** البحث والتصفية حسب الكلمة المفتاحية، الفئة، والموقع.
-- **Database Interaction:** يعتمد على Eloquent ORM.
+- **Search & Filter:** Search and filter jobs by keywords, categories, and locations.
+- **Database Interaction:** Uses Eloquent ORM for database interactions.
 
 ### 3. Job Application Management
-- **Application Submission:** تقديم طلبات الوظائف وإرفاق السير الذاتية.
-- **File Uploads:** رفع الملفات مع التأكيد على الأمان.
+- **Application Submission:** Allows job seekers to submit job applications and attach resumes.
+- **File Uploads:** Supports secure file uploads.
 
 ### 4. User Dashboard
-- **Admin Dashboard:** يسمح بإدارة المستخدمين، الوظائف، ومحتوى الموقع.
-- **Job Seeker Dashboard:** يسمح للباحثين بإدارة ملفهم الشخصي والتقديم للوظائف.
+- **Admin Dashboard:** Enables management of users, jobs, and site content.
+- **Job Seeker Dashboard:** Allows job seekers to manage their profiles and apply for jobs.
 
 ---
 
 ## Installation
-اتبع الخطوات التالية لتثبيت المشروع محليًا:
+Follow these steps to install the project locally:
 
 1. **Clone the repository:**
    ```bash
